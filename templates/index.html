@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Translator
+    </title>
+    <link rel="stylesheet" href="{%static 'index.css'%}">
+</head>
+<body>
+    <div class="divbody">
+        <p class="heading">Translator</p>
+    <form method="POST" action="translate">
+      {% csrf_token %}
+    
+        
+        <input type="text" id="text" name="text" placeholder="Enter text"     class="text-input" required />
+        <button type="submit" class="tbutton">TRANSLATE</button>
+
+    </form>
+</div>
+</body>
+</html>

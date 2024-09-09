@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Translator
+    </title>
+    <link rel="stylesheet" href="{%static 'translate.css'%}">
+</head>
+<body>
+    <div class="divbody">
+        <p class="heading">Translator</p>
+
+        <p class="text-out">{{ org_text }}</p>
+        <p class="lang">{{ org_lg }}</p>
+    <p class="text-out">{{ tr_text }}</p>
+    <p class="lang">{{ tr_lg }}</p>
+</div>
+</body>
+</html>
